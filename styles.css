@@ -1,16 +1,35 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-image: url('header-image.jpg'); /* You can replace with your own image */
+    height: 400px;
+    text-align: center;
     color: white;
-    padding: 10px 0;
+    padding-top: 100px;
+}
+
+header .header-content {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
     text-align: center;
 }
 
@@ -30,21 +49,47 @@ nav ul li a {
     font-size: 18px;
 }
 
-nav ul li select {
-    font-size: 16px;
-    padding: 5px;
+section.intro {
+    padding: 40px;
+    text-align: center;
 }
 
-main {
-    padding: 20px;
+section h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+section.menu-preview {
+    background-color: #fff;
+    padding: 40px 0;
     text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
